@@ -25,9 +25,7 @@
 
          stage('Build') {
               echo '准备构建项目...... '
-             container('maven'){
-                 sh 'mvn clean install -f  pom.xml -U -Dmaven.test.skip=true -s settings/' + setting_name + '.xml'
-             }
+              sh 'mvn clean install -f  pom.xml -U -Dmaven.test.skip=true -s settings/' + setting_name + '.xml'
              echo '项目'+project_name+'构建成功..... '
           }
 
