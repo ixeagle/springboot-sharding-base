@@ -38,7 +38,7 @@
              }
                sh 'docker login -u '+user_name+ ' -p '+pass_word+' registry.cn-hangzhou.aliyuncs.com'
              echo '阿里云镜像仓库登录成功....'
-             sh 'cp target/*.jar ' +project_name + 'docker/'
+             sh 'cp target/*.jar  docker/'
              def img_url = repo_url + '/'+ package_name+'/'+project_name+':'+img_version
              sh 'cd  docker/ && docker build -t '+ img_url + ' .'
              sh 'docker push '+ img_url
