@@ -29,7 +29,7 @@
         <name>oneof the central mirrors in china</name>
         <url>http://maven.net.cn/content/groups/public/</url>
         <mirrorOf>central</mirrorOf>
-
+        </mirror>
     </mirrors>
     <servers>
         <server>
