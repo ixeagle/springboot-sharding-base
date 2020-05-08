@@ -6,11 +6,29 @@
 <!--<localRepository>E:\maven\local</localRepository>-->
     <mirrors>
         <mirror>
-            <id>mirror</id>
-            <mirrorOf>!rdc-releases,!rdc-snapshots</mirrorOf>
-            <name>mirror</name>
-            <url>https://maven.aliyun.com/nexus/content/groups/public</url>
+            <id>alimaven</id>
+            <mirrorOf>central</mirrorOf>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>
         </mirror>
+        <mirror>
+            <id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+        <mirror>
+            <id>central</id>
+            <name>Maven Repository Switchboard</name>
+            <url>http://repo1.maven.org/maven2/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+        <!-- 中央仓库在中国的镜像 -->
+        <mirror>
+        <id>maven.net.cn</id>
+        <name>oneof the central mirrors in china</name>
+        <url>http://maven.net.cn/content/groups/public/</url>
+        <mirrorOf>central</mirrorOf>
 
     </mirrors>
     <servers>
